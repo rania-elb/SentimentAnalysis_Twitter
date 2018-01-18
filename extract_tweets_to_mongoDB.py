@@ -25,13 +25,12 @@ db = client.TwitterData_Macron
 db.tweet_data.create_index([("id", pymongo.ASCENDING)],unique = True) # make sure the collected tweets are unique
 collection = db.tweet_data_macron
 
-# Add the keywords you want to track. They can be cashtags, hashtags, or words.
 keywords = ['#Macron']
 
 # Optional - Only grab tweets of specific language
 language = ['en']
 
-# You need to replace these with your own values that you get after creating an app on Twitter's developer portal.
+
 consumer_key = "iHiVsusTqlexDmCB2C5krA3h1"
 consumer_secret = "UEPVSObOzjeB3e3QeDa3zGlNVUi31nw5G3IFS17K2m3L1jsJi4"
 access_token = "852253511085641730-AHuG9HU4q1zyyv4utU8YDvFKBA21IB7"
